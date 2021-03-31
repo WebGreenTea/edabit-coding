@@ -1,7 +1,3 @@
-//Write a recursive function that filters the items in an array (given as parameter arr) by positional parity (odd or even), given as parameter par, starting from the opposite end. Return an array of items on odd positions (... 5, 3, 1) or on even positions (... 6, 4, 2) and counting from the last item in the array.
-
-console.log(getItemsAt(["A", "R", "B", "I", "T", "R", "A", "R", "I", "L", "Y"], "even"));
-
 function getItemsAt(arr, par) {
     let temp;
 	if(arr.length % 2 == 0){
@@ -61,3 +57,7 @@ function getItemsAt(arr, par) {
         }
     }
 }
+console.log(getItemsAt([2, 4, 6, 8, 10], "odd"));
+console.log(getItemsAt(["E", "D", "A", "B", "I", "T"], "even"));
+console.log(getItemsAt([")", "(", "*", "&", "^", "%", "$", "#", "@", "!"], "even"));
+console.log(getItemsAt(["A", "R", "B", "I", "T", "R", "A", "R", "I", "L", "Y"], "even"));
